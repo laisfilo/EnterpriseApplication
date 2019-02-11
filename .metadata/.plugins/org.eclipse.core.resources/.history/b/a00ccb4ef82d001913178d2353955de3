@@ -1,0 +1,17 @@
+package br.com.fiap.teste;
+
+import br.com.fiap.bean.Carro;
+
+public class Teste {
+
+		public static void main(String[] args) {
+			//instanciar carro
+			Carro carro = new Carro();
+			
+			//API Reflection vamos recuperar nome da classe;
+			
+			String nome = carro.getClass().getName();
+			
+			System.out.println(nome);
+		}
+}

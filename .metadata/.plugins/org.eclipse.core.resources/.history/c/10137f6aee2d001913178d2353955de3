@@ -1,0 +1,24 @@
+
+public class Aluno extends Pessoa{
+	provate String rm;
+	
+	
+	
+	public Aluno(String nome, String cpf) {
+		super(nome, cpf);
+	}
+
+	public String getRm() {
+		return rm;
+	}
+
+	public void setRm(String rm) {
+		this.rm = rm;
+	}
+
+	public void setSexo(Genero masculiuno) {
+		// TODO Auto-generated method stub
+		
+	}
+}
+

@@ -1,0 +1,22 @@
+package br.com.fiap.teste;
+
+import br.com.fiap.bean.Carro;
+
+public class Teste {
+
+		public static void main(String[] args) {
+			//instanciar carro
+			Carro carro = new Carro();
+			criarTabela(carro); //chamei o metodo
+			
+		}
+		
+		public static void criarTabela(Object obj) {
+			//API Reflection vamos recuperar nome da classe;
+			
+			//coloca no metodo
+			String nome = obj.getClass().getName();
+			
+			System.out.println(nome);
+		}
+}

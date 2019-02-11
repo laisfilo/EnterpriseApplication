@@ -1,0 +1,12 @@
+package br.com.fiap.anotacoes;
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Target;
+
+//Pra que serve a anotaçao
+@Target(ElementType.FIELD)
+
+public @interface Coluna {
+	String nome();
+	String tipo();
+	boolean obrigatorio() default false;
+}
